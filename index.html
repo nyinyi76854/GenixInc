@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Genix | FWord & Falcon S</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .logo {
+      max-width: 120px;
+    }
+
+    .center-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .center-logo {
+      position: relative;
+    }
+
+    .line {
+      width: 60vw;
+      height: 1px;
+      background-color: #ccc;
+      margin: 20px 0;
+      position: relative;
+    }
+
+    .branches {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 900px;
+      width: 100%;
+      position: relative;
+    }
+
+    .branches::before,
+    .branches::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      height: 1px;
+      background-color: #999;
+      width: 40%;
+    }
+
+    .branches::before {
+      left: 0;
+    }
+
+    .branches::after {
+      right: 0;
+    }
+
+    .app-logo {
+      max-width: 100px;
+    }
+
+    .apps {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 700px;
+      margin: 20px auto;
+      gap: 40px;
+    }
+
+    .app {
+      flex: 1;
+    }
+
+    .app h2 {
+      font-size: 20px;
+      margin: 15px 0 10px;
+    }
+
+    .app p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    @media screen and (max-width: 768px) {
+      .apps {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .branches::before,
+      .branches::after {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="center-container">
+    <!-- Genix Logo -->
+    <div class="center-logo">
+      <img src="images/Genix.png" alt="Genix Logo" class="logo">
+      <p style="margin-top: 10px; font-weight: 600;">Genix</p>
+    </div>
+
+    <!-- Connecting Lines -->
+    <div class="branches">
+      <img src="images/fword.png" alt="FWord Logo" class="app-logo">
+      <img src="images/falcons.png" alt="Falcon S Logo" class="app-logo">
+    </div>
+
+    <p style="margin: 20px 0; font-weight: 500;">Genix proudly powers both <strong>FWord</strong> and <strong>Falcon S</strong></p>
+
+    <!-- App Descriptions -->
+    <div class="apps">
+      <div class="app">
+        <h2>FWord – The Social Experience</h2>
+        <p>
+          FWord is your go-to platform for posting updates, sharing your thoughts, reacting to others, and commenting on everything that matters.
+          Dive into a dynamic social feed and connect with the world like never before.
+        </p>
+      </div>
+      <div class="app">
+        <h2>Falcon S – Lightning Messaging</h2>
+        <p>
+          Falcon S delivers a smooth, real-time messaging experience. Whether you're chatting one-on-one or exploring public conversations,
+          Falcon S is built for fast, secure, and stylish communication.
+        </p>
+      </div>
+    </div>
+
+    <p style="margin-top: 30px; font-style: italic; color: #555;">
+      Both apps are built on the same powerful Genix database — enabling seamless integration, shared users, and consistent experiences.
+    </p>
+  </div>
+
+</body>
+</html>
