@@ -58,6 +58,24 @@
       transform: rotate(10deg);
       transform-origin: left center;
     }
+    .top-corner-icons {
+  position: absolute;
+  width: 100%;
+  top: 20px;
+  left: 0;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+}
+
+.top-corner-icons img {
+  width: 50px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
 
     .app-logos {
       display: flex;
@@ -138,6 +156,10 @@
   <p style="margin: 30px 0 10px; font-weight: 500;">
     Genix proudly powers both <strong>FWord</strong> and <strong>Falcon S</strong>
   </p>
+<div class="top-corner-icons">
+  <img src="momsuu.png" alt="Logo Left">
+  <img src="ceo.png" alt="Logo Right">
+</div>
 
   <!-- App Descriptions -->
   <div class="apps">
